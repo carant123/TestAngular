@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div id="content" class="col-lg-10 offset-lg-1">
-  <header id="header" class="col-lg-12">
+  <header id="header" class="col-lg-12" [style.background]="header_color">
     <h1>
       Welcome to {{ title }}! ssss
     </h1>
@@ -8,8 +8,8 @@
 
   <nav id="nav" class="col-lg-12">
     <ul>
-      <li><a [routerLink]="['/home']">Home</a></li>
-      <li><a href="#">Productos</a></li>
+      <li><a [routerLink]="['/home']" [routerLinkActive]="['activado']">Home</a></li>
+      <li><a [routerLink]="['/productos']" [routerLinkActive]="['activado']">Productos</a></li>
       <li><a href="#">Crear producto</a></li>
     </ul>
   </nav>

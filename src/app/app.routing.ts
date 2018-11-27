@@ -4,10 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 // Componentes
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
+import { ProductosListComponent } from './productos-list/productos-list.component';
 
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'home', component: HomeComponent},
+    {path: 'productos', component: ProductosListComponent},
     {path: '**', component: ErrorComponent}
 ];
 
